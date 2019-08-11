@@ -9,6 +9,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>dragon-job</module>
+        <module>dragon-common</module>
     </modules>
     <properties>
         <jdk.version>1.8</jdk.version>
