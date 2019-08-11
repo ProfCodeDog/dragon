@@ -1,0 +1,27 @@
+server:
+  host: 127.0.0.1
+  port: 8181
+  servlet:
+    context-path: /job-executor
+
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  application:
+    name: job-executor
+
+### xxl-job admin address list, such as "http://address" or "http://address01,http://address02"
+#xxl.job.admin.addresses=http://127.0.0.1:8088/job-server/v1
+xxl:
+ job:
+  admin:
+   addresses: http://127.0.0.1:8180/job-manage
+### xxl-job executor address
+  executor:
+   appname: xxl-job-executor-sample
+   ip: 127.0.0.1
+   port: 8182
+   logpath: /Users/machine/Downloads/temp/data/log/dragon/job-executor
+   logretentiondays: -1
+### xxl-job, access token
+  accessToken:
