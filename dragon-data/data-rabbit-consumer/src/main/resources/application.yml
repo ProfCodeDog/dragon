@@ -1,0 +1,24 @@
+server:
+  host: 127.0.0.1
+  port: 8280
+  servlet:
+    context-path: /data-rabbit-comsumer
+
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  application:
+    name: data-rabbit-comsumer
+# rabbitmq配置
+  rabbitmq:
+     addresses: 127.0.0.1
+     port: 5672
+     username: dragon
+     password: dragon
+     virtualHost: dragon
+     publisher-confirms: true
+     publisher-returns: true
+     listener:
+      concurrency: 5
+      max-concurrency: 10
+      prefetch: 5
